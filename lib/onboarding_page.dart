@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+//import 'package:flutter/services.dart';
 import 'package:sizer/sizer.dart';
+import 'package:ug_foodhub/LogIn.dart';
+import 'package:ug_foodhub/SignUp.dart';
 
 class OnboardingPage extends StatelessWidget {
   @override
@@ -53,9 +55,10 @@ class OnboardingPage extends StatelessWidget {
                     children: <Widget>[
                       TextButton(
                         onPressed: () {
-                          //navigate to register page
+                          // navigate to register page
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
+                            return SignUp();
                             //return register page
                           }));
                         },
@@ -97,6 +100,7 @@ class OnboardingPage extends StatelessWidget {
                               //navigate to login page
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
+                                return LogIn();
                                 //return login page
                               }));
                             },
